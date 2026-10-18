@@ -1,0 +1,48 @@
+/dts-v1/;
+// version: 17
+// last_comp_version: 16
+
+/ {
+    fragment@0 {
+        target-path = "/dsi@ff450000/panel@0";
+        __overlay__ {
+            compatible = "rocknix,generic-dsi";
+            panel_description =
+                "G size=71,71 delays=100,50,20,200,20 format=rgb888 lanes=4 flags=0xe03",
+
+                "M clock=40760 horizontal=640,120,139,120 vertical=480,17,5,13 default=1",
+                "M clock=27650 horizontal=640,188,9,190 vertical=480,13,41,5",
+                "M clock=25500 horizontal=640,188,2,190 vertical=480,13,2,5",
+                "M clock=23930 horizontal=640,87,39,87 vertical=480,13,63,5",
+                "M clock=24930 horizontal=640,87,15,87 vertical=480,13,50,5",
+                "M clock=23460 horizontal=640,87,2,87 vertical=480,13,2,5",
+                "M clock=26600 horizontal=640,87,20,87 vertical=480,13,36,5",
+                "M clock=24840 horizontal=640,87,5,87 vertical=480,13,8,5",
+                "# failed to find mode for fps=60.000000 c=30600 h=816 v=500",
+                "M clock=30620 horizontal=640,87,38,87 vertical=480,13,100,5",
+                "M clock=43580 horizontal=640,120,168,120 vertical=480,17,41,13",
+                "M clock=46350 horizontal=640,120,120,120 vertical=480,17,5,13",
+                "M clock=61800 horizontal=640,120,120,120 vertical=480,17,5,13",
+
+                "I seq=b9f11283",
+                "I seq=ba338105f90e0e2000000000000000442500910a0000024fd1000037",
+                "I seq=b825",
+                "I seq=bf021100",
+                "I seq=b30c100a5003ff00000000",
+                "I seq=c0737350500000087000",
+                "I seq=bc46",
+                "I seq=cc0b",
+                "I seq=b480",
+                "I seq=b20013f0",
+                "I seq=e307070b0b030b00000000ff00c010",
+                "I seq=c153001e1e77e1ccdd67773333",
+                "I seq=b51010",
+                "I seq=b66c7c",
+                "I seq=e908000e0000b0b11131232810b0b127080004020000000004020000008888ba60240888888888888888ba713518888888888800000001000000000000000000",
+                "I seq=ea970a820213070000000000008088ba17538888888888888188ba0642888888888888231000028000000000000000000000000000000000000000000000",
+                "I seq=e000070b272d3f3b37050a0b0f110f12121800070b272d3f3b37050a0b0f110f121218",
+                "I seq=11 wait=150",
+                "I seq=29 wait=50";
+        };
+    };
+};
